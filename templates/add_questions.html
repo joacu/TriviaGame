@@ -1,0 +1,23 @@
+{% extends 'layout.html' %} {% block main %}
+<div class="container border mt-4 p-4 bg-light">
+    <h2 class="pb-5 text-primary">NEW QUESTIONS</h2>
+
+    <form action="/add_questions" method="post">
+        <label class="form-label fw-bold" for="floatingTextarea">QUESTION:</label>
+        <textarea class="form-control" name="question"></textarea>
+
+        <label class="form-label fw-bold" for="floatingTextarea">Correct Answer:</label>
+        <input class="form-control" name="correct" >
+
+        <label class="form-label fw-bold" for="floatingTextarea">Fake Answer 1:</label>
+        <input class="form-control" name="incorrect01">
+
+        <label class="form-label fw-bold" for="floatingTextarea">Fake Answer 2:</label>
+        <input class="form-control" name="incorrect02">
+
+        <button type="submit" class="btn btn-primary mt-5">Cancel</button>
+        <button type="submit" class="btn btn-primary mt-5">Add Question</button>
+    </form>
+
+    <div>
+        {%endblock %}pb-5
