@@ -36,7 +36,7 @@ router.get("/play", protected_route, async(req, res) => {
       array1.push(pregunta.answer03);
       shuffle(array1);
       obj1 = {
-          id: pregunta.user_id,
+          id: pregunta.id,
           question: pregunta.question,
           p1: array1[0],
           p2: array1[1],
